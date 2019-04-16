@@ -1,0 +1,20 @@
+<!-- 这个页面负责登录页面信息 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django page</title>
+</head>
+<body>
+    <h1>发布会管理</h1>
+    <form method="post"action="/login_action/">
+        <input name="username"type="text"placeholder="username"><br>
+        <input name="password"type="password"placeholder="password"><br>
+        <!-- error值对应views模块中render返回字典中的key -->
+        {{ error }}<br>
+        <button id="btn"type="submit">登录</button>
+        <!-- token验证配置 -->
+        {% csrf_token %}
+    </form>
+</body>
+</html>
