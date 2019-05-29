@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sign',
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'HOST':'127.0.0.1', # 地址
         'PORT':'3306', # 端口号
-        'NAME':'guest', # 数据库
+        'NAME':'guest_test', # 数据库
         'USER':'root', # 账户
         'PASSWORD':'', # 密码
         'OPTIONS':{
