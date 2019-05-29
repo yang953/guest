@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 # 发布会表
 class Event(models.Model):
-    name = models.CharField(max_length=10) # 发布会标题
+    name = models.CharField(max_length=20) # 发布会标题
     limit = models.IntegerField() # 参加人数
     status = models.BooleanField() # 状态
     address = models.CharField(max_length=200) # 地址
